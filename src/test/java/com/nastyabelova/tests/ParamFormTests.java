@@ -35,7 +35,7 @@ public class ParamFormTests extends TestBase {
         registrationPage.checkResultsData(TestDataHelper.expectedDataMS1);
         Assertions.assertTrue(Pattern.matches("(.*).jpg",picture));
     }
-    @EnumSource(value = StateNames.class, names = {"HARYANA","RAJASTHAN"})
+    @EnumSource(value = StateNames.class, names = {"NCR_City"})
     @ParameterizedTest(name = "Проверка выбора штата и города")
     void checkStateCities(StateNames stateNames) {
         registrationPage.openPage();
